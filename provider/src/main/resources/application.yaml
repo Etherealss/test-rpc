@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: RPC-provider
+  # 数据源配置
+  datasource:
+    url: jdbc:mysql://119.23.214.198:3306/nowander?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: nowander_user
+    password: baotamysql123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+dubbo:
+  application:
+    name: dubbo-provider
+  registry:
+    address: N/A
+    register: false
+  protocol:
+    host: 127.0.0.1
+    port: 18080
+    name: dubbo
